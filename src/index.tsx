@@ -1,3 +1,7 @@
-export function multiply(a: number, b: number): Promise<number> {
-  return Promise.resolve(a * b);
+import WView from './components/WView';
+import WText from './components/WText';
+
+export {
+  WView,
+  WText
 }
