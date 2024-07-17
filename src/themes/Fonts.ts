@@ -1,5 +1,5 @@
 interface FontTypes {
-  [key: string]: {fontFamily: string; fontSize: number};
+  [key: string]: { fontFamily: string; fontSize: number };
 }
 
 interface FontSizes {
@@ -69,7 +69,7 @@ export const size: FontSizes = {
 const fontWeights = ['bold', 'light', 'medium', 'regular', 'semiBold'];
 const fontTypes: FontTypes = {};
 
-fontWeights.forEach(weight => {
+fontWeights.forEach((weight) => {
   Object.entries(size).forEach(([_, sizeValue]) => {
     const key = `${weight}${sizeValue}`;
     fontTypes[key] = {

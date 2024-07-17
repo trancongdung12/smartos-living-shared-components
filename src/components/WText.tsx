@@ -51,30 +51,31 @@ function WText(props: RNTextProps) {
     mWidth,
   } = props;
   return (
-   //@ts-ignore
+    //@ts-ignore
     <RNText
       {...props}
       allowFontScaling={false}
       numberOfLines={numberOfLine}
       style={[
         styles[type as keyof typeof styles],
-        color && {color},
+        color && { color },
         center && styles.center,
         fill && styles.fill,
         underLine && styles.txtUnderline,
-        mTop && {marginTop: mTop},
-        mBottom && {marginBottom: mBottom},
-        mLeft && {marginLeft: mLeft},
-        mRight && {marginRight: mRight},
-        mHoz && {marginHorizontal: mHoz},
-        mVer && {marginVertical: mVer},
-        textAlign && {textAlign},
+        mTop && { marginTop: mTop },
+        mBottom && { marginBottom: mBottom },
+        mLeft && { marginLeft: mLeft },
+        mRight && { marginRight: mRight },
+        mHoz && { marginHorizontal: mHoz },
+        mVer && { marginVertical: mVer },
+        textAlign && { textAlign },
         style,
         lineHeight && {
           lineHeight,
         },
-        mWidth && {maxWidth: mWidth},
-      ]}>
+        mWidth && { maxWidth: mWidth },
+      ]}
+    >
       {children}
     </RNText>
   );

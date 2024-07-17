@@ -147,37 +147,37 @@ function WView({
         justifyCenter && styles.justifyCenter,
         justifyBetween && styles.justifyBetween,
         center && styles.center,
-        mTop && {marginTop: mTop},
-        mBottom && {marginBottom: mBottom},
-        mLeft && {marginLeft: mLeft},
-        mRight && {marginRight: mRight},
-        pTop && {paddingTop: pTop},
-        pBottom && {paddingBottom: pBottom},
-        pLeft && {paddingLeft: pLeft},
-        pRight && {paddingRight: pRight},
-        pHoz && {paddingHorizontal: pHoz},
-        pVer && {paddingVertical: pVer},
-        mHoz && {marginHorizontal: mHoz},
-        mVer && {marginVertical: mVer},
-        margin && {margin},
-        borderBottomWidth && {borderBottomWidth},
-        borderBottomColor && {borderBottomColor},
-        borderTopRightRadius && {borderTopRightRadius},
-        borderTopLeftRadius && {borderTopLeftRadius},
-        borderBottomLeftRadius && {borderBottomLeftRadius},
-        borderBottomRightRadius && {borderBottomRightRadius},
-        color && {backgroundColor: color},
-        h && {height: h},
-        w && {width: w},
-        maxHeight && {maxHeight},
-        minHeight && {minHeight},
-        minWidth && {minWidth},
-        maxWidth && {maxWidth},
-        borderRadius && {borderRadius},
-        borderWidth && {borderWidth},
-        borderColor && {borderColor},
-        justifyContent && {justifyContent},
-        alignItems && {alignItems},
+        mTop && { marginTop: mTop },
+        mBottom && { marginBottom: mBottom },
+        mLeft && { marginLeft: mLeft },
+        mRight && { marginRight: mRight },
+        pTop && { paddingTop: pTop },
+        pBottom && { paddingBottom: pBottom },
+        pLeft && { paddingLeft: pLeft },
+        pRight && { paddingRight: pRight },
+        pHoz && { paddingHorizontal: pHoz },
+        pVer && { paddingVertical: pVer },
+        mHoz && { marginHorizontal: mHoz },
+        mVer && { marginVertical: mVer },
+        margin && { margin },
+        borderBottomWidth && { borderBottomWidth },
+        borderBottomColor && { borderBottomColor },
+        borderTopRightRadius && { borderTopRightRadius },
+        borderTopLeftRadius && { borderTopLeftRadius },
+        borderBottomLeftRadius && { borderBottomLeftRadius },
+        borderBottomRightRadius && { borderBottomRightRadius },
+        color && { backgroundColor: color },
+        h && { height: h },
+        w && { width: w },
+        maxHeight && { maxHeight },
+        minHeight && { minHeight },
+        minWidth && { minWidth },
+        maxWidth && { maxWidth },
+        borderRadius && { borderRadius },
+        borderWidth && { borderWidth },
+        borderColor && { borderColor },
+        justifyContent && { justifyContent },
+        alignItems && { alignItems },
         selfCenter && styles.selfCenter,
         absolute && {
           ...styles.absolute,
@@ -186,14 +186,18 @@ function WView({
           right: aRight,
           top: aTop,
         },
-        opacity && {opacity},
+        opacity && { opacity },
         wrap && styles.wrap,
         style && style,
-      ]}>
+      ]}
+    >
       {loading ? (
         <View
-          style={[styles.loadingContainer, {backgroundColor: bgColorLoading}]}>
-          <View style={[styles.indicator, {backgroundColor: bgColorIndicator}]}>
+          style={[styles.loadingContainer, { backgroundColor: bgColorLoading }]}
+        >
+          <View
+            style={[styles.indicator, { backgroundColor: bgColorIndicator }]}
+          >
             <ActivityIndicator
               color={loadingColor ? loadingColor : 'transparent'}
               size={sizeIndicator}
@@ -203,7 +207,8 @@ function WView({
                 color={textLoadingColor}
                 mTop={8}
                 textAlign="center"
-                type="regular12">
+                type="regular12"
+              >
                 {textLoading}
               </WText>
             )}
