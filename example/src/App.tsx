@@ -12,7 +12,7 @@ export default function App() {
 
       <WTouchable>
         <WText type="bold20">Touch me!</WText>
-        <WIcon name="ic-alltype" size={20} />
+        <WIcon name="ic-add" size={20} />
       </WTouchable>
     </WView>
   );

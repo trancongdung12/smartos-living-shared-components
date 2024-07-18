@@ -4,13 +4,8 @@
  */
 
 import createIconSet from 'react-native-vector-icons/lib/create-icon-set';
-const glyphMap = {
-  'ic-attach': 98,
-  'ic-camera': 100,
-  'ic-add': 58,
-  'ic-alltype': 57414,
-};
+import glyphMap from './assets/fonts/smartos-v3-glyphMap.json';
 
-const iconSet: any = createIconSet(glyphMap, 'smartos-v3', 'smartos-v3.ttf');
+const iconSet = createIconSet(glyphMap, 'smartos-v3', 'smartos-v3.ttf');
 
 export default iconSet;

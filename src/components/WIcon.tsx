@@ -3,8 +3,8 @@ import IconSmartos from '../smartos-v3';
 
 interface WIconProps {
   name: string;
-  size?: number; // Optional prop with a default value
-  color?: string; // Optional prop with a default value
+  size?: number;
+  color?: string;
   style?: StyleProp<TextStyle>;
 }
 
