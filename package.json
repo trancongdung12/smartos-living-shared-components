@@ -176,5 +176,10 @@
   "create-react-native-library": {
     "type": "library",
     "version": "0.38.2"
+  },
+  "dependencies": {
+    "react-native-currency-input": "^1.1.1",
+    "react-native-fast-image": "^8.6.3",
+    "react-native-vector-icons": "^10.1.0"
   }
 }

@@ -10,15 +10,27 @@ npm install smartos-living-shared-components
 
 ## Usage
 
-
 ```js
-import { multiply } from 'smartos-living-shared-components';
+import {
+  WIcon,
+  WText,
+  WTouchable,
+  WView,
+} from 'smartos-living-shared-components';
 
-// ...
+export default function App() {
+  return (
+    <WView fill center>
+      <WText type="bold20">Hello world!</WText>
 
-const result = await multiply(3, 7);
+      <WTouchable>
+        <WText type="bold20">Touch me!</WText>
+        <WIcon name="ic-alltype" size={20} />
+      </WTouchable>
+    </WView>
+  );
+}
 ```
-
 
 ## Contributing
 
