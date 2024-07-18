@@ -178,9 +178,9 @@
     "version": "0.38.2"
   },
   "dependencies": {
-    "react-native-currency-input": "^1.1.1",
-    "react-native-fast-image": "^8.6.3",
-    "react-native-vector-icons": "^10.1.0",
-    "xml2js": "^0.6.2"
+    "react-native-currency-input": "1.1.1",
+    "react-native-fast-image": "8.6.3",
+    "react-native-vector-icons": "10.1.0",
+    "xml2js": "0.6.2"
   }
 }
